@@ -5,7 +5,7 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "mocha '**/*.test.js' --ignore 'node_modules/**/*' ",
         "build": "babel ./src --out-dir ./build",
         "compile": "babel-node src/compile.js",
         "start": "nodemon --exec babel-node src/index.js",
