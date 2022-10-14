@@ -7,6 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "babel ./src --out-dir ./build",
+        "compile": "babel-node src/compile.js",
         "start": "nodemon --exec babel-node src/index.js",
         "lint": "eslint .",
         "postinstall": "husky install"
@@ -40,6 +41,7 @@
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
         "dotenv": "^16.0.1",
-        "express": "^4.18.1"
+        "express": "^4.18.1",
+        "solc": "^0.8.17"
     }
 }
